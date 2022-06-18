@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Podcastgeist</string>
+    <string name="correo">INGRESAR CORREO</string>
+    <string name="contraseña">INGRESAR CONTRASEÑA</string>
+    <string name="buscar_podcast">Buscar un podcast...</string>
+
+</resources>
