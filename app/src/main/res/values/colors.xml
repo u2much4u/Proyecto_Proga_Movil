@@ -7,4 +7,10 @@
     <color name="azulbtn">#3C4D86</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="celeste">#57A9E1</color>
+    <color name="amarillo_dark">#86A041</color>
+    <color name="rojo_dark">#CB3246</color>
+
+
+
 </resources>
