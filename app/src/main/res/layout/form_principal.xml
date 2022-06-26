@@ -24,15 +24,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
+        android:onClick="signUp"
         android:text="Registrate Aquí"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="15sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linea_divisoria"
-        app:layout_constraintVertical_bias="0.146"
+        app:layout_constraintVertical_bias="0.096"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -101,10 +102,10 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linea_divisoria"
-        app:layout_constraintVertical_bias="0.146"
+        app:layout_constraintVertical_bias="0.134"
         tools:ignore="MissingConstraints" />
 
 

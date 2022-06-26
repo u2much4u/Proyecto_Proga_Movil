@@ -7,4 +7,7 @@
     <string name="soporte_podcast">Si requieres contactar a soporte aquí tienes todas las opiones de contacto: </string>
 
 
+    <string name="msg_error_Login">Error al iniciar sesión. Por favor verifique la información e intente nuevamente.</string>
+    <string name="msg_error_SignUp">Error al registrarse. Por favor verifique la información e intente nuevamente.</string>
+
 </resources>
