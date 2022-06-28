@@ -39,7 +39,6 @@
         android:fontFamily="sans-serif-black"
         android:onClick="validarLogin"
 
-        android:text="Iniciar Sesión"
         android:textSize="18sp"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"

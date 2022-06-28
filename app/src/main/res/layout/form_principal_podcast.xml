@@ -20,16 +20,15 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewPodcastDisponibles"
-        android:layout_width="413dp"
-        android:layout_height="136dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="411dp"
+        android:layout_height="110dp"
         android:alpha=".80"
         app:cardBackgroundColor="@color/black"
         app:cardElevation="30dp"
         app:layout_constraintBottom_toTopOf="@+id/tableRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewMedio"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewCategorias"
         app:layout_constraintVertical_bias="0.909"
         tools:ignore="MissingConstraints">
 
@@ -51,13 +50,15 @@
             tools:ignore="MissingConstraints" />
     </androidx.cardview.widget.CardView>
 
-    <EditText
+    <!-- EditText -->
+    <TextView
         android:id="@+id/txtbuscarPodcast"
         android:layout_width="326dp"
         android:layout_height="80dp"
         android:layout_marginTop="16dp"
         android:alpha=".75"
         android:background="@drawable/edit_tex_redondo"
+        android:enabled="false"
         android:fontFamily="sans-serif-black"
         android:hint="@string/buscar_podcast"
         android:inputType="textEmailAddress"
@@ -71,42 +72,40 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewMedio"
-        android:layout_width="327dp"
-        android:layout_height="323dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="331dp"
+        android:layout_height="321dp"
+        android:layout_marginTop="4dp"
         android:alpha=".80"
         app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="20dp"
         app:cardElevation="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtbuscarPodcast"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/labelActualmente"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Reciclador"
             android:layout_width="match_parent"
-            android:layout_height="39dp"
-            android:background="@color/black"
-            android:backgroundTint="@color/black"
-            android:breakStrategy="simple"
-            android:fontFamily="sans-serif-black"
-            android:paddingTop="7dp"
-            android:text="Todos los podcast:"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azulbtn"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.146"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtbuscarPodcast">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
     </androidx.cardview.widget.CardView>
 
     <TableRow
         android:id="@+id/tableRow"
-        android:layout_width="415dp"
+        android:layout_width="match_parent"
         android:layout_height="62dp"
         android:alpha=".80"
         android:background="@color/black"
@@ -147,6 +146,50 @@
             app:srcCompat="@drawable/icono_home"
             tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
     </TableRow>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewCategorias"
+        android:layout_width="333dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:alpha=".80"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewMedio"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="257dp"
+            android:layout_height="46dp"
+            android:alpha=".90"
+            android:background="@color/black"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-26dp"
+            tools:layout_editor_absoluteY="483dp">
+
+            <ImageButton
+                android:id="@+id/btnCategoriaActual"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                app:srcCompat="@drawable/icono_categoria_actual"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btnCategoriaMotivacion"
+                android:layout_width="103dp"
+                android:layout_height="53dp"
+                android:background="@null"
+                app:srcCompat="@drawable/icono_categoria_motivacion"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        </TableRow>
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
