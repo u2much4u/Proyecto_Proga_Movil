@@ -1,6 +1,6 @@
 package com.example.podcastgeist
 
-data class Entidad_Podcast(
+data class Entidad_Podcast (
     var ID : Int ?= null,
     var Nombre : String ?= null,
     var Descripcion: String ?= null,

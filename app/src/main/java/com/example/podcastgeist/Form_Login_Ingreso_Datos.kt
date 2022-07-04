@@ -81,9 +81,15 @@ class Form_Login_Ingreso_Datos (var TipoGestion: Int = 1) : AppCompatActivity() 
 
     private fun MostrarFormPrincipal(user: FirebaseUser?) {
         if (user!=null) {
-            val intent = Intent(this,Form_Principal_Podcast::class.java)
+            val intent = Intent(this,Form_Principal_Lista_Podcast::class.java)
             startActivity(intent)
         }
+    }
+
+    public override fun onStart(){
+        super.onStart()
+        val usuario = auth.currentUser
+        MostrarFormPrincipal(usuario)
     }
 
 }
