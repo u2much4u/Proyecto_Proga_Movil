@@ -1,4 +1,4 @@
-package com.example.podcastgeist
+package com.example.podcastgeist.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,13 +7,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.podcastgeist.Form_Principal_Lista_Podcast
+import com.example.podcastgeist.Form_Principal_Podcast
+import com.example.podcastgeist.R
+import com.example.podcastgeist.Variables_Globales
 import com.squareup.picasso.Picasso
 
 
 class Entidad_Podcast_Adapter : RecyclerView.Adapter<Entidad_Podcast_Adapter.ViewHolder>(){
-
 
     var lstPodcast = Form_Principal_Lista_Podcast.lstPodcast
     inner class ViewHolder(itemView : View): RecyclerView.ViewHolder(itemView){
@@ -23,11 +25,10 @@ class Entidad_Podcast_Adapter : RecyclerView.Adapter<Entidad_Podcast_Adapter.Vie
         var itemCardview : RelativeLayout
 
         init{
-            itemNombre = itemView.findViewById(R.id.labelPodcastNombre)
+            itemNombre = itemView.findViewById(R.id.labelNombrePodcast)
             itemDescripcion = itemView.findViewById(R.id.labelPodcastDescripcion)
             itemImagen = itemView.findViewById(R.id.podcast_cover)
             itemCardview = itemView.findViewById(R.id.Relative_Layout_PanelContenedor)
-
         }
 
         fun onclicka(i: Int) {

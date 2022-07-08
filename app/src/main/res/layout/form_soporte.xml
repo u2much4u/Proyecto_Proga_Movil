@@ -21,7 +21,7 @@
     <EditText
         android:id="@+id/txtbuscarPodcast2"
         android:layout_width="326dp"
-        android:layout_height="80dp"
+        android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:alpha=".75"
         android:background="@drawable/edit_tex_redondo"

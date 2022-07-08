@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/entidad_capitulo_layout.xml" value="0.315625" />
+        <entry key="..\:/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/entidad_podcast_layout.xml" value="0.315625" />
+        <entry key="..\:/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_login_ingreso_datos.xml" value="0.315625" />
+        <entry key="..\:/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_principal.xml" value="0.315625" />
+        <entry key="..\:/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_principal_lista_podcast.xml" value="0.315625" />
+        <entry key="..\:/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_principal_podcast.xml" value="0.315625" />
+        <entry key="..\:/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_soporte.xml" value="0.315625" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Podcastgeist/app/src/main/res/drawable/edit_tex_redondo.xml" value="0.19199999334161955" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Podcastgeist/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2845" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Podcastgeist/app/src/main/res/layout/activity_form_login.xml" value="0.17074275362318841" />
@@ -18,14 +25,18 @@
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/drawable/icono_categoriamotivacion.xml" value="0.1115" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/drawable/icono_favorito.xml" value="0.1" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/drawable/icono_home.xml" value="0.283" />
+        <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/drawable/icono_pause.xml" value="0.2065" />
+        <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/drawable/icono_reproducir.xml" value="0.1575" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/drawable/icono_soporte.xml" value="0.1" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/drawable/icono_usuario.xml" value="0.1" />
+        <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/entidad_capitulo_layout.xml" value="0.2872503840245776" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/entidad_podcast_layout.xml" value="0.315625" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_login_ingreso_datos.xml" value="0.315625" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_principal.xml" value="0.315625" />
-        <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_principal_lista_podcast.xml" value="0.315625" />
-        <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_principal_podcast.xml" value="0.2879999900124293" />
+        <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_principal_lista_podcast.xml" value="0.4363636212309535" />
+        <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_principal_podcast.xml" value="0.315625" />
         <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/layout/form_soporte.xml" value="0.315625" />
+        <entry key="..\:/Users/u2much4u/Desktop/Fidelitas/Udemy/Programacion_Dispositivos_Moviles/Proyecto_Proga_Movil/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2065" />
       </map>
     </option>
   </component>

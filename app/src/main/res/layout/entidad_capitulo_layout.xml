@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -16,41 +17,49 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <ImageView
-            android:id="@+id/podcast_cover"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp" />
-
         <TextView
-            android:id="@+id/labelNombrePodcast"
+            android:id="@+id/labelNombreCapitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/podcast_cover"
-            android:layout_toRightOf="@+id/podcast_cover"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toEndOf="@+id/btnReproducirCapitulo"
             android:fontFamily="sans-serif-black"
-            android:text="Nombre Podcast"
+            android:text="Nombre Capitulo"
             android:textAlignment="viewStart"
             android:textColor="@color/white"
-            android:textSize="17sp" />
+            android:textSize="16sp" />
+
+
 
         <TextView
-            android:id="@+id/labelPodcastDescripcion"
+            android:id="@+id/labelDescripcionCapitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/labelNombrePodcast"
-            android:layout_toEndOf="@+id/podcast_cover"
-            android:layout_toRightOf="@+id/podcast_cover"
+            android:layout_below="@+id/labelNombreCapitulo"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/btnReproducirCapitulo"
+            android:layout_toRightOf="@+id/btnReproducirCapitulo"
             android:fontFamily="sans-serif"
             android:text="Descripcion Podcast"
             android:textAlignment="viewStart"
             android:textColor="@color/white"
             android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/btnReproducirCapitulo"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-4dp"
+
+            android:background="@drawable/icono_reproducir"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     </RelativeLayout>
 

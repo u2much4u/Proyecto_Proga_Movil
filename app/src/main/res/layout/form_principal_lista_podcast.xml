@@ -32,29 +32,102 @@
         app:layout_constraintVertical_bias="0.909"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/labelEscuchandoActualmente"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="39dp"
-            android:background="@color/black"
-            android:backgroundTint="@color/black"
-            android:breakStrategy="simple"
-            android:fontFamily="sans-serif-black"
-            android:paddingTop="7dp"
-            android:text="Escuchando atualmente"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.146"
-            tools:ignore="MissingConstraints" />
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/lineaDivision"
+                android:layout_width="300dp"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="44dp"
+                android:layout_toEndOf="@+id/imagenPodcastActual"
+                android:alpha=".80"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.413" />
+
+            <ImageButton
+                android:id="@+id/btnPauseEscuchando"
+                android:layout_width="45dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="214dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/icono_pause" />
+
+            <TextView
+                android:id="@+id/labelNombreCapituloActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginBottom="52dp"
+                android:layout_toEndOf="@+id/imagenPodcastActual"
+                android:fontFamily="sans-serif"
+                android:text="Nombre Capitulo"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imagenPodcastActual"
+                android:layout_width="82dp"
+                android:layout_height="96dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="5dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/labelNombrePodcastActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="78dp"
+                android:layout_toEndOf="@+id/imagenPodcastActual"
+                android:fontFamily="sans-serif-black"
+                android:text="Nombre Podcast"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btnPlayEscuchando"
+                android:layout_width="43dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toStartOf="@+id/btnPauseEscuchando"
+                android:layout_toEndOf="@+id/imagenPodcastActual"
+                android:background="@drawable/icono_reproducir" />
+        </RelativeLayout>
+
     </androidx.cardview.widget.CardView>
 
     <!-- EditText -->
     <TextView
         android:id="@+id/txtbuscarPodcast"
         android:layout_width="326dp"
-        android:layout_height="80dp"
+        android:layout_height="30dp"
         android:layout_marginTop="16dp"
         android:alpha=".75"
         android:background="@drawable/edit_tex_redondo"
@@ -91,6 +164,7 @@
             android:id="@+id/Reciclador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:backgroundTint="@color/azulbtn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -189,6 +263,7 @@
 
         </TableRow>
     </androidx.cardview.widget.CardView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
