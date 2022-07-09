@@ -55,18 +55,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintVertical_bias="0.413" />
 
-            <ImageButton
-                android:id="@+id/btnPauseEscuchando"
-                android:layout_width="45dp"
-                android:layout_height="38dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="214dp"
-                android:layout_marginBottom="2dp"
-                android:background="@drawable/icono_pause" />
-
             <TextView
                 android:id="@+id/labelNombreCapituloActual"
                 android:layout_width="wrap_content"
@@ -109,7 +97,7 @@
                 android:textColor="@color/white" />
 
             <ImageButton
-                android:id="@+id/btnPlayEscuchando"
+                android:id="@+id/btnPlayStop"
                 android:layout_width="43dp"
                 android:layout_height="37dp"
                 android:layout_alignParentTop="true"

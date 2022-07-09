@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
-import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,8 +17,6 @@ class Form_Principal_Podcast : AppCompatActivity() {
         lateinit var imagePodcastEscuchando: ImageView
         lateinit var labelNombrePodcastEscuchando: TextView
         lateinit var labelNombreCapituloEscuchando: TextView
-        lateinit var btnReproducirEscuchando: ImageButton
-        lateinit var btnPausarEscuchando: ImageButton
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,14 +42,16 @@ class Form_Principal_Podcast : AppCompatActivity() {
         recyclerView.setAdapter(Entidad_Capitulo_Adapter())
         recyclerView.adapter?.notifyDataSetChanged()
 
-        if(Variables_Globales.isPlaying){Variables_Globales.ActualizarEscuchando("Form_Principal_Podcast")}
+        if(Variables_Globales.isPlaying){
+            Variables_Globales.ActualizarEscuchando("Form_Principal_Podcast")
+            Variables_Globales.AsignarOnclicStop()
+        }
     }
 
     private fun CargarControlesEscuchando(){
         imagePodcastEscuchando =findViewById<ImageView>(R.id.imagenPodcastActual)
         labelNombrePodcastEscuchando =findViewById<TextView>(R.id.labelNombrePodcastActual)
         labelNombreCapituloEscuchando =findViewById<TextView>(R.id.labelNombreCapituloActual)
-        btnReproducirEscuchando =findViewById<ImageButton>(R.id.btnPlayEscuchando)
-        btnPausarEscuchando =findViewById<ImageButton>(R.id.btnPauseEscuchando)
+        Variables_Globales.lstBotonesPlayPause.add(findViewById<ImageButton>(R.id.btnPlayStop))
     }
 }

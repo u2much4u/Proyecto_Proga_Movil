@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.podcastgeist.Form_Principal_Lista_Podcast
@@ -16,7 +15,6 @@ import com.example.podcastgeist.Variables_Globales
 
 class Entidad_Capitulo_Adapter : RecyclerView.Adapter<Entidad_Capitulo_Adapter.ViewHolder>(){
 
-    private var mediaPlayer : MediaPlayer? = null
     var lstPodcast = Form_Principal_Lista_Podcast.lstPodcast
     inner class ViewHolder(itemView : View): RecyclerView.ViewHolder(itemView){
         var itembtnReproducir : ImageButton
@@ -36,13 +34,13 @@ class Entidad_Capitulo_Adapter : RecyclerView.Adapter<Entidad_Capitulo_Adapter.V
                        x -> x.ID == Variables_Globales.IDPocadcastSeleccionado
                }?.lstCapitulos?.find{ z -> z.IDCapitulo == i }!!
                 Variables_Globales.ActualizarEscuchando("*")
-                mediaPlayer = MediaPlayer()
-                mediaPlayer!!.setAudioStreamType(AudioManager.STREAM_MUSIC)
-                mediaPlayer!!.setDataSource(Variables_Globales.Entidad_Podcast_CapituloSeleccionado.URL)
-                mediaPlayer!!.prepare()
-                mediaPlayer!!.start()
+                Variables_Globales.mediaPlayer = MediaPlayer()
+                Variables_Globales.mediaPlayer!!.setAudioStreamType(AudioManager.STREAM_MUSIC)
+                Variables_Globales.mediaPlayer!!.setDataSource(Variables_Globales.Entidad_Podcast_CapituloSeleccionado.URL)
+                Variables_Globales.mediaPlayer!!.prepare()
+                Variables_Globales.mediaPlayer!!.start()
                 Variables_Globales.isPlaying = true
-
+                Variables_Globales.AsignarOnclicStop()
             }
         }
     }

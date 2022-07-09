@@ -19,15 +19,13 @@ class Form_Principal_Lista_Podcast : AppCompatActivity() {
         lateinit var imagePodcastEscuchando: ImageView
         lateinit var labelNombrePodcastEscuchando: TextView
         lateinit var labelNombreCapituloEscuchando: TextView
-        lateinit var btnReproducirEscuchando: ImageButton
-        lateinit var btnPausarEscuchando: ImageButton
-
         var lstPodcast: MutableList<Entidad_Podcast> = mutableListOf()
         }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Variables_Globales.appContext = applicationContext
         CargarPodcast()
         CargarPodcastCapitulos()
         println("----------------CANTIDAD PODCAST CARGADOS: ${lstPodcast.count()}-------------------")
@@ -37,6 +35,10 @@ class Form_Principal_Lista_Podcast : AppCompatActivity() {
         recyclerView.setLayoutManager(LinearLayoutManager(this));
         recyclerView.setAdapter(Entidad_Podcast_Adapter())
         recyclerView.adapter?.notifyDataSetChanged()
+
+        if(Variables_Globales.isPlaying){
+            Variables_Globales.ActualizarEscuchando("Form_Principal_Podcast")
+        }
 
     }
 
@@ -76,13 +78,7 @@ class Form_Principal_Lista_Podcast : AppCompatActivity() {
         imagePodcastEscuchando  =findViewById<ImageView>(R.id.imagenPodcastActual)
         labelNombrePodcastEscuchando  =findViewById<TextView>(R.id.labelNombrePodcastActual)
         labelNombreCapituloEscuchando  =findViewById<TextView>(R.id.labelNombreCapituloActual)
-        btnReproducirEscuchando  =findViewById<ImageButton>(R.id.btnPlayEscuchando)
-        btnPausarEscuchando  =findViewById<ImageButton>(R.id.btnPauseEscuchando)
+        Variables_Globales.lstBotonesPlayPause.add(findViewById<ImageButton>(R.id.btnPlayStop))
     }
-
-
-
-
-
 
 }
