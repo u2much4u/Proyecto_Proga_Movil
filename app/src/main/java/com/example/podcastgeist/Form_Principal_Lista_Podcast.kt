@@ -1,5 +1,7 @@
 package com.example.podcastgeist
 
+import android.content.ComponentName
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
@@ -19,6 +21,7 @@ class Form_Principal_Lista_Podcast : AppCompatActivity() {
         lateinit var imagePodcastEscuchando: ImageView
         lateinit var labelNombrePodcastEscuchando: TextView
         lateinit var labelNombreCapituloEscuchando: TextView
+        lateinit var labelDuracionCapituloEscuchando: TextView
         var lstPodcast: MutableList<Entidad_Podcast> = mutableListOf()
         }
 
@@ -29,8 +32,10 @@ class Form_Principal_Lista_Podcast : AppCompatActivity() {
         CargarPodcast()
         CargarPodcastCapitulos()
         println("----------------CANTIDAD PODCAST CARGADOS: ${lstPodcast.count()}-------------------")
+
         setContentView(R.layout.form_principal_lista_podcast)
         CargarControlesEscuchando()
+
         val recyclerView = findViewById<RecyclerView>(R.id.Reciclador)
         recyclerView.setLayoutManager(LinearLayoutManager(this));
         recyclerView.setAdapter(Entidad_Podcast_Adapter())
@@ -39,7 +44,6 @@ class Form_Principal_Lista_Podcast : AppCompatActivity() {
         if(Variables_Globales.isPlaying){
             Variables_Globales.ActualizarEscuchando("Form_Principal_Podcast")
         }
-
     }
 
      fun CargarPodcast(){
@@ -78,7 +82,19 @@ class Form_Principal_Lista_Podcast : AppCompatActivity() {
         imagePodcastEscuchando  =findViewById<ImageView>(R.id.imagenPodcastActual)
         labelNombrePodcastEscuchando  =findViewById<TextView>(R.id.labelNombrePodcastActual)
         labelNombreCapituloEscuchando  =findViewById<TextView>(R.id.labelNombreCapituloActual)
-        Variables_Globales.lstBotonesPlayPause.add(findViewById<ImageButton>(R.id.btnPlayStop))
-    }
+        labelDuracionCapituloEscuchando  =findViewById<TextView>(R.id.labelDuraciónEscuchando)
 
+        Variables_Globales.lstBotonesPlayPause.add(findViewById<ImageButton>(R.id.btnPlayStop))
+        var btnInicio = findViewById<RecyclerView>(R.id.btnInicio) as ImageButton
+        var btnSoporte = findViewById<RecyclerView>(R.id.btnSoporte) as ImageButton
+        btnSoporte.setOnClickListener {
+            val intent = Intent(Variables_Globales.appContext, Form_Soporte::class.java)
+            Variables_Globales.appContext.startActivity(intent)
+        }
+
+        btnInicio.setOnClickListener {
+            val intent = Intent(Variables_Globales.appContext, Form_Principal_Lista_Podcast::class.java)
+            Variables_Globales.appContext.startActivity(intent)
+        }
+    }
 }

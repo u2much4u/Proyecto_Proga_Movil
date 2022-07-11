@@ -4,10 +4,16 @@
     <string name="contraseña">INGRESAR CONTRASEÑA</string>
     <string name="buscar_podcast">Buscar un podcast...</string>
     <string name="contac">Buscar un podcast...</string>
-    <string name="soporte_podcast">Si requieres contactar a soporte aquí tienes todas las opiones de contacto: </string>
+    <string name="soporte_podcast">¿Algo salió mal?, te presentamos diferentes opciones para contactar a soporte:</string>
 
 
     <string name="msg_error_Login">Error al iniciar sesión. Por favor verifique la información e intente nuevamente.</string>
     <string name="msg_error_SignUp">Error al registrarse. Por favor verifique la información e intente nuevamente.</string>
+
+    <string name="msg_enviar_correo">Enviar correo electrónico</string>
+    <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
+    <string name="msg_web_view">Abrir sitio Web</string>
+    <string name="msg_mensaje_correo">Le escribo este correo para</string>
+    <string name="msg_saludos">Saludos amigos</string>
 
 </resources>

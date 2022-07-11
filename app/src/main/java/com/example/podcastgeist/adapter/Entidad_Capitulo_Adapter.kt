@@ -29,19 +29,16 @@ class Entidad_Capitulo_Adapter : RecyclerView.Adapter<Entidad_Capitulo_Adapter.V
         }
 
         fun onclicka(i: Int) {
-            itembtnReproducir.setOnClickListener { v ->
-               Variables_Globales.Entidad_Podcast_CapituloSeleccionado = lstPodcast.find {
-                       x -> x.ID == Variables_Globales.IDPocadcastSeleccionado
-               }?.lstCapitulos?.find{ z -> z.IDCapitulo == i }!!
-                Variables_Globales.ActualizarEscuchando("*")
-                Variables_Globales.mediaPlayer = MediaPlayer()
-                Variables_Globales.mediaPlayer!!.setAudioStreamType(AudioManager.STREAM_MUSIC)
-                Variables_Globales.mediaPlayer!!.setDataSource(Variables_Globales.Entidad_Podcast_CapituloSeleccionado.URL)
-                Variables_Globales.mediaPlayer!!.prepare()
-                Variables_Globales.mediaPlayer!!.start()
-                Variables_Globales.isPlaying = true
-                Variables_Globales.AsignarOnclicStop()
-            }
+            Variables_Globales.Entidad_Podcast_CapituloSeleccionado = lstPodcast.find { x -> x.ID == Variables_Globales.IDPocadcastSeleccionado
+            }?.lstCapitulos?.find{ z -> z.IDCapitulo == i }!!
+            Variables_Globales.ActualizarEscuchando("*")
+            Variables_Globales.mediaPlayer = MediaPlayer()
+            Variables_Globales.mediaPlayer!!.setAudioStreamType(AudioManager.STREAM_MUSIC)
+            Variables_Globales.mediaPlayer!!.setDataSource(Variables_Globales.Entidad_Podcast_CapituloSeleccionado.URL)
+            Variables_Globales.mediaPlayer!!.prepare()
+            Variables_Globales.mediaPlayer!!.start()
+            Variables_Globales.isPlaying = true
+            Variables_Globales.AsignarOnclicStop()
         }
     }
 
@@ -60,7 +57,6 @@ class Entidad_Capitulo_Adapter : RecyclerView.Adapter<Entidad_Capitulo_Adapter.V
 
     override fun getItemCount(): Int {
         return lstPodcast.find { x -> x.ID == Variables_Globales.IDPocadcastSeleccionado }?.lstCapitulos!!.count()
-
     }
 
 }
