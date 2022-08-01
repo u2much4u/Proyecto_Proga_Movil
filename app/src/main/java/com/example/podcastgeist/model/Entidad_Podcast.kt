@@ -2,6 +2,7 @@ package com.example.podcastgeist.model
 
 data class Entidad_Podcast (
     var ID : Int ?= null,
+    var IDCategoria : String ?= null,
     var Nombre : String ?= null,
     var Descripcion: String ?= null,
     var ImagenURL: String ?= null,

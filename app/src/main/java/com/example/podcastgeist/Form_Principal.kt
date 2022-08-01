@@ -12,14 +12,13 @@ class Form_Principal : AppCompatActivity() {
     }
 
     fun login(view: View) {
-        val intent = Intent(this,Form_Login_Ingreso_Datos::class.java)
+        val intent = Intent(this, Form_Login_Ingreso_Datos::class.java)
         startActivity(intent)
     }
 
     fun signUp(view: View) {
-        val intent = Intent(this,Form_Login_Ingreso_Datos::class.java)
-        intent.putExtra("TipoGestion","2");
+        val intent = Intent(this, Form_Login_Ingreso_Datos::class.java)
+        intent.putExtra("TipoGestion", "2");
         startActivity(intent)
     }
-
 }

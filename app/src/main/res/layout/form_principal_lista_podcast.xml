@@ -236,13 +236,21 @@
 
         <TableRow
             android:id="@+id/tableRow2"
-            android:layout_width="257dp"
+            android:layout_width="match_parent"
             android:layout_height="46dp"
             android:alpha=".90"
             android:background="@color/black"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="-26dp"
             tools:layout_editor_absoluteY="483dp">
+
+            <ImageButton
+                android:id="@+id/btnCategoriaTodos"
+
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                app:srcCompat="@drawable/icono_todos" />
 
             <ImageButton
                 android:id="@+id/btnCategoriaActual"
@@ -254,8 +262,8 @@
 
             <ImageButton
                 android:id="@+id/btnCategoriaMotivacion"
-                android:layout_width="103dp"
-                android:layout_height="53dp"
+                android:layout_width="129dp"
+                android:layout_height="48dp"
                 android:background="@null"
                 app:srcCompat="@drawable/icono_categoria_motivacion"
                 tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />

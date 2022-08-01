@@ -25,7 +25,6 @@ class Entidad_Capitulo_Adapter : RecyclerView.Adapter<Entidad_Capitulo_Adapter.V
             itembtnReproducir = itemView.findViewById(R.id.btnReproducirCapitulo)
             itemNombreCapitulo = itemView.findViewById(R.id.labelNombreCapitulo)
             itemDescripcionCapitulo = itemView.findViewById(R.id.labelDescripcionCapitulo)
-
         }
 
         fun onclicka(i: Int) {

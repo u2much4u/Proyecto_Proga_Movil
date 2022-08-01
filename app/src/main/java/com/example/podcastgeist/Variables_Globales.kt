@@ -1,10 +1,10 @@
 package com.example.podcastgeist
 
-import android.content.ComponentName
+import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
 import android.media.MediaPlayer
 import android.widget.ImageButton
+import androidx.core.content.ContextCompat
 import com.example.podcastgeist.Form_Principal_Lista_Podcast.Companion.lstPodcast
 import com.example.podcastgeist.model.Entidad_Podcast_Capitulo
 import com.squareup.picasso.Picasso
@@ -18,6 +18,7 @@ class Variables_Globales {
         var IDPocadcastSeleccionado : Int? = 0
         var Entidad_Podcast_CapituloSeleccionado = Entidad_Podcast_Capitulo()
         var lstBotonesPlayPause : MutableList<ImageButton> = mutableListOf()
+        var IDCategoriaSeleccioada : String = "*"
 
 
         fun ActualizarEscuchando(nombreVentana : String = "") {
@@ -57,6 +58,16 @@ class Variables_Globales {
                     AsignarOnclicStop()
                 }
             }
+        }
+
+        public fun CambiarColorBtnCategoria(){
+           /* when (IDCategoriaSeleccioada) {
+                "*" -> {
+                    appContext.resources?.getDrawable(R.drawable.icono_categoria_motivacion)
+                    Form_Principal_Lista_Podcast.btnCategoriaMotivacion.setb(appContext.resources?.getDrawable(R.drawable.icono_categoria_motivacion))   ?.setTint(ContextCompat.getColor(appContext, R.color.AzulSelecionado));
+
+                }
+            }*/
         }
     }
 }
